@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'EosioSwift'
   s.version          = '0.2.1'
   s.summary          = 'EOSIO SDK for Swift - API for integrating with EOSIO-based blockchains.'
-  s.homepage         = 'https://github.com/EOSIO/eosio-swift'
+  s.homepage         = 'https://github.com/EOSLaoMao/eosio-swift'
   s.license          = { :type => 'MIT', :text => <<-LICENSE
                            Copyright (c) 2017-2019 block.one and its contributors.  All rights reserved.
                          LICENSE
@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
                          'Steve McCoole' => 'steve.mccoole@objectpartners.com',
                          'Ben Martell' => 'ben.martell@objectpartners.com' }
 
-  s.source           = { :git => 'https://github.com/EOSIO/eosio-swift.git', :tag => "v" + s.version.to_s }
+  s.source           = { :git => 'https://github.com/EOSLaoMao/eosio-swift.git', :tag => "v" + s.version.to_s }
 
-  s.swift_version         = '5.0'
+  s.swift_version         = '5.2'
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'EosioSwift/**/*.swift'
@@ -38,5 +38,4 @@ Pod::Spec.new do |s|
 
   s.ios.dependency 'BigInt', '~> 5.0'
   s.ios.dependency 'PromiseKit', '~> 6.8'
-  s.ios.dependency 'Base16'
 end
